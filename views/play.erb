@@ -3,15 +3,8 @@ Player 2: <%= $player_2.name %>
 </h1>
 <%= $player_2.name %>: <%= $player_2.points %>
 <div>
-<form action="/play" method="get">
+<form action="/attack" method="get">
 <input type="submit" name="player_1_attack" value="Player 1 attack"/>
 </form></div><p></p>
-<div>
 
-<% if params[:player_1_attack] %>
-<%= $player_1.name %> attacked <%= $player_2.name %>
-<% $player_2.attacked %>
-<%= $player_2.name %>: <%= $player_2.points %>
-<% end %>
-</div>
 
