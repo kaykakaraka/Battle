@@ -1,7 +1,4 @@
 <div>
-<% if params[:player_1_attack] %>
-<%= $player_1.name %> attacked <%= $player_2.name %> <p></p>
-<% $player_2.attacked %>
-<%= $player_2.name %>: <%= $player_2.points %>
-<% end %>
+<%= $game.player_1.name %> attacked <%= $game.player_2.name %> <p></p>
+<%= $game.player_2.name %>: <%= $game.player_2.points %>
 </div>
