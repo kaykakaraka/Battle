@@ -1,7 +1,7 @@
 require 'game'
 
 RSpec.describe Game do
-  xit "allows a player to attack another" do
+  it "allows a player to attack another" do
     player_2 = double :player_2, attacked: 90
     game = Game.new
     expect(game.attack(player_2)).to eq 90
